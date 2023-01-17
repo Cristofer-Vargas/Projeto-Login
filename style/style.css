@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
+  transition: 1s;
 }
 
 /* Corpo da página */
@@ -43,6 +44,13 @@ div.title-card {
   grid-area: title;
 
   width: 100%;
+}
+
+div.title-card div.line-divisor {
+  display: none;
+  height: 12px;
+  background-color: #f4d7d76f;
+  margin: -20px 0 20px 0;
 }
 
 div.title-card h1 {
@@ -143,8 +151,22 @@ div.out-acess input {
   width: 100%;
 
   margin-top: 10px;
-  padding: 7px;
+  padding: 10px;
 
   border-radius: 6px;
   border: 0;
+
+}
+
+div.form input::placeholder {
+  font-family: 'Korean';
+  font-size: 1.6em;
+}
+
+div.form input:focus {
+  box-shadow: 0;
+  border: 0 none;
+  outline: 0;
+
+  /* No meu navegador, Outline já basta, mas para que funcione em outros, decidi resetar as outras propriedades */
 }

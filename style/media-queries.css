@@ -1,0 +1,129 @@
+/* Para ativar o max width do card branco e um background no main */
+
+@media screen and (min-width: 600px) {
+
+  /* Background */
+
+  main.background-oriental {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: url(../images/oriental-back.jpg) right bottom no-repeat;
+    background-size: cover;
+  }
+
+  
+  /* Card */
+
+  section.login-card {
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.5);
+
+    max-width: 600px;
+
+    padding: 50px 0;
+
+    background-color: #fff;
+  }
+
+  div.decorative-login .bonsai-login-svg {
+    width: 50%;
+  }
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+  div.out-acess {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  div.out-acess a {
+    display: inline-block;
+  }
+
+  div.out-acess input {
+    margin: 0;
+    width: 50%;
+    display: inline-block;
+  }
+
+}
+
+
+@media screen and (min-width: 1024px) {
+  
+  section.login-card {
+    grid-template-areas: 
+    'title bonsai'
+    'msg bonsai'
+    'form bonsai'
+    ;
+
+    max-width: 900px;
+    padding: 0;
+  }
+
+
+  /* Bonsai */
+
+  div.decorative-login {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.decorative-login .circle-decorate {
+    left: 0;
+    top: 50%;
+
+    rotate: 90deg;
+  }
+
+  div.decorative-login .bonsai-login-svg {
+    width: 80%;
+  }
+
+
+
+  /* Titulo */
+
+  div.title-card {
+    margin-top: 50px;
+  }
+
+
+  div.title-card div.line-divisor {
+    display: block;
+  }
+
+
+  /* Menssagem */
+
+  div.mensage-welcome {
+    margin-top: 30px;
+  }
+
+  /* Fomrulario */
+
+
+  div.form {
+    margin-bottom: 100px;
+  }
+
+  form div.out-acess {
+    margin-top: 74px;
+  }
+
+}
