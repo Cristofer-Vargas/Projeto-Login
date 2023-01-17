@@ -7,6 +7,7 @@
   padding: 0;
   font-family: 'Inter', sans-serif;
   transition: 1s;
+  box-sizing: border-box;
 }
 
 /* Corpo da página */
@@ -144,6 +145,10 @@ div.out-acess a {
   color: #000;
 }
 
+div.out-acess a:hover {
+  color: #932626;
+}
+
 div.out-acess input {
   background-color: #932626;
   color: #fff;
@@ -155,7 +160,11 @@ div.out-acess input {
 
   border-radius: 6px;
   border: 0;
+}
 
+div.out-acess input:hover {
+  background-color: #631919;
+  cursor: pointer;
 }
 
 div.form input::placeholder {

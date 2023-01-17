@@ -45,20 +45,20 @@
       </div>
 
       <div class="form">
-        <form action="cadastro.php" method="post">
+        <form action="cadastro.php" method="post" autocomplete="on">
 
           <div class="input-space">
             <input type="email" name="email-user" id="useremail" placeholder="Email"
-              autocomplete="email">
+              autocomplete="email" required>
           </div>
 
           <div class="input-space">
-            <input type="password" name="pass-user" id="userpass" placeholder="Senha" autocomplete="current-password">
+            <input type="password" name="pass-user" id="userpass" placeholder="Senha" autocomplete="current-password" required minlength="8" maxlength="18">
           </div>
 
           <div class="out-acess">
             <a href="#">Esqueci a senha</a>
-            <input type="submit" value="Login">
+            <input type="submit" value="Login" minlength="4">
           </div>
         </form>
       </div>
