@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Tela de Login feita de teste para projeto do Curso em Vídeo, Módulo 4 - Capítulo 26">
+
+  <title>Tela Login</title>
+
+  <link rel="stylesheet" href="fonts/import.css">
+  <link rel="stylesheet" href="style/style.css" media="all">
+  <link rel="stylesheet" href="style/media-queries.css">
+
+</head>
+
+<body>
+
+  <main>
+    <section class="login-card">
+      <div class="title-card">
+        <h1>
+          Login
+        </h1>
+      </div>
+
+      <div class="decorative-login">
+        <div class="bonsai-login-svg">
+          <img src="images/bonsai.svg" alt="Bonsai">
+        </div>
+
+        <img class="circle-decorate" src="images/minicircle-red-white.svg" alt="">
+      </div>
+
+      <div class="mensage-welcome">
+        <p>
+          Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.
+        </p>
+      </div>
+
+      <div class="form">
+        <form action="cadastro.php" method="post">
+
+          <div class="email-space input-space">
+            <input type="email" name="email-user" id="useremail" placeholder="Email"
+              autocomplete="email">
+          </div>
+
+          <div class="input-space">
+            <input type="password" name="pass-user" id="userpass" placeholder="Senha" autocomplete="current-password">
+          </div>
+
+          <div class="out-acess">
+            <a href="#">Esqueci a senha</a>
+            <input type="submit" value="Login">
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>

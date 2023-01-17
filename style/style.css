@@ -1,0 +1,150 @@
+/* 
+  Cor de fundo do bonsai: #f4d7d76f
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Corpo da página */
+
+/* Geral */
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+
+
+/* Card */
+
+section.login-card {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-areas: 
+  'title'
+  'bonsai'
+  'msg'
+  'form'
+  ;
+
+  padding: 30px 0;
+}
+
+
+
+/* Titulo */
+
+div.title-card {
+  grid-area: title;
+
+  width: 100%;
+}
+
+div.title-card h1 {
+  text-align: center;
+  font-family: 'Korean';
+  font-size: 2.5em;
+
+  margin-bottom: 30px;
+}
+
+
+/* Imagem */
+
+div.decorative-login {
+  grid-area: bonsai;
+
+  position: relative;
+  background-color: #f4d7d76f;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+div.decorative-login .bonsai-login-svg {
+  width: 70%;
+
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+div.decorative-login .bonsai-login-svg img {
+  width: 100%;
+}
+
+div.decorative-login .circle-decorate {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translate(-50%, 50%);
+}
+
+
+
+/* Menssagem de Boas vindas */
+
+div.mensage-welcome {
+  grid-area: msg;
+
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 10px;
+
+  text-align: center;
+  line-height: 1.4em;
+}
+
+
+
+
+
+/* Formulário */
+
+div.form {
+  grid-area: form;
+}
+
+form div.input-space {
+  width: 75%;
+
+  border-bottom: 2px solid black;
+  margin: 30px auto;
+}
+
+div.input-space input {
+  width: 100%;
+  padding: 7px 10px;
+
+  border: 0px;
+}
+
+form div.out-acess {
+  width: 75%;
+  margin: 0 auto;
+}
+
+div.out-acess a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+}
+
+div.out-acess input {
+  background-color: #932626;
+  color: #fff;
+  
+  width: 100%;
+
+  margin-top: 10px;
+  padding: 7px;
+
+  border-radius: 6px;
+  border: 0;
+}

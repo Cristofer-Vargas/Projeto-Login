@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Hashiba';
+  src: url(./Hashiba.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Korean';
+  src: url(./Korean-Calligraphy.ttf) format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
